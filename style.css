@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#quiz-container {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.answer-option {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#feedback {
+    text-align: center;
+    font-weight: bold;
+    color: #2ecc71;
+    /* Green for correct, red for incorrect later */
+}
+
+#scoreboard {
+    text-align: center;
+}
+
+#score {
+    font-size: 1.5em;
+}
+
+#next-button {
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Animations (Customize for visual appeal!) */
+
+.correct {
+    animation: correct-glow 0.5s ease-in-out;
+}
+
+@keyframes correct-glow {
+    0% {
+        background-color: #fff;
+    }
+
+    100% {
+        background-color: #dff0d8;
+    }
+}
+
+.incorrect {
+    animation: incorrect-shake 0.5s ease-in-out;
+}
+
+@keyframes incorrect-shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
